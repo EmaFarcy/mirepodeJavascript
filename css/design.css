@@ -126,6 +126,12 @@ hr {
   font-size: 50px;
   font-weight: bold; }
 
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
 /*---*/
 .AboutUs2 {
   display: inline-block;

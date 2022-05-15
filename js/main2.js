@@ -1,8 +1,8 @@
-//1-Creo un array vacio llamado productos
+//1-Creo un array vacio llamado productos para ingresar mis productos
 
 const productos = [];
 
-//2. Creo una Función Productos 
+//2. Creo una Función Productos. Funcion Contructora.  
 function Productos(accesorio, precio, stock){
 	this.accesorio= accesorio;
 	this.precio= precio;
@@ -15,12 +15,12 @@ const crearProductos= (accesorio, precio, stock) => {
 	return producto;
 }
 
-//4. Ahora debo crear una función para guardar el producto ingresado por el usuario
+//4. Ahora debo crear una función con el método push para guardar el producto ingresado por el usuario
 const agregarAProductos = (objetoProducto)=>{
 	productos.push(objetoProducto);
 };
 
-//5. Pedir los datos al usuario
+//5. Pedir los datos del producto de ciclismo al usuario
 let accesorio= prompt("Ingrese un accesorio de ciclismo: ");
 let precio= prompt("Ingrese un precio: ");
 let stock= prompt("Ingrese la cantidad del producto: ");
