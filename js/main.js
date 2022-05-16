@@ -47,7 +47,7 @@ let hideText = document.getElementById('hideText');
 
 hideText_btn.addEventListener('click', toggleText);
 
-function toggleText = ()=> {
+function toggleText() {
   hideText.classList.toggle('show');
 
   if (hideText.classList.contains('show')){
