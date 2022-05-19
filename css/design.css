@@ -255,12 +255,13 @@ hr {
 
 .imageBikes {
   display: flex;
+  flex-direction: columns;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
   border-style: hidden;
   display: inline;
-  width: 30%;
+  width: 32%;
   padding: 30px;
   cursor: pointer;
   transition: all 450ms ease; }
