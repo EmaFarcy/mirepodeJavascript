@@ -323,13 +323,12 @@ hr {
 
 .imageBikes{
 	display: flex;
-	flex-direction: columns;
 	justify-content: center;
 	align-items: center;
 	border-radius: 30px;
 	border-style: hidden;
 	display: inline;
-	width: 32%;
+	width: 30%;
 	padding: 30px;
 	cursor: pointer;
 	transition: all 450ms ease;
@@ -350,6 +349,11 @@ hr {
 }
 
 /*Accesories*/
+
+.shopping-cart{
+	color: white;
+
+}
 .cont{
 	display: flex;
 	flex-direction: column;
