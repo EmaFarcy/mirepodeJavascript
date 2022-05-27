@@ -10,7 +10,7 @@ const btnC= document.querySelector(".buyAll")
 
 
 try {
-    fetch("productos/elements.json")
+    fetch("../productos/elements.json")
     .then(respuesta => {
         return respuesta.json()
     })
@@ -112,12 +112,12 @@ btnC.addEventListener("click", (e) => {
     const trJs= document.querySelectorAll(".trJs")
 
     if (trJs.length == 0){
-        alert("No hay elementos para comprar")
+        alert("Your Cart is currently empty.")
     }else{
         trJs.forEach(elem => {
             elem.outerHTML = ""
         })
-        alert("elementos se han comprado exitosamente") 
+        alert("Your purchase was successful!") 
     }
 
 

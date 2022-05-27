@@ -229,6 +229,19 @@ hr {
   background: #f29718; }
 
 /*Bikes*/
+.title, .model, .price {
+  font-size: 20px;
+  color: #fff; }
+
+.btnAddCarr {
+  color: #fff; }
+
+.obtjst {
+  color: #fff; }
+
+.trJs {
+  color: #fff; }
+
 #logo_aero {
   width: 70px; }
 
