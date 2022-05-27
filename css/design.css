@@ -228,6 +228,10 @@ hr {
 .mainContact .form .btn-submit:hover {
   background: #f29718; }
 
+/*LogIN*/
+.login {
+  color: #fff; }
+
 /*Bikes*/
 .title, .model, .price {
   font-size: 20px;
