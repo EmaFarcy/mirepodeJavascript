@@ -229,12 +229,6 @@ hr {
   background: #f29718; }
 
 /*Bikes*/
-#contentMain {
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin: 40px; }
-
 #logo_aero {
   width: 70px; }
 
@@ -253,30 +247,77 @@ hr {
 .specializedTitle img {
   width: 300px; }
 
-.imageBikes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  border-style: hidden;
-  display: inline;
-  width: 30%;
-  padding: 30px;
-  cursor: pointer;
-  transition: all 450ms ease; }
-
-.imageBikes:hover {
-  width: 36%;
-  transition: width 250ms ease; }
-
 #text_video {
   color: #fff; }
 
-@media screen and (max-width: 800px) {
-  .imageBikes {
-    width: 100%; }
-  .imageBikes {
-    pointer-events: none; } }
+.tt {
+  color: #fff; }
+
+.buyAll {
+  color: #fff; }
+
+.contGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; }
+
+.contGrid > .producto {
+  width: 300px;
+  height: 500px;
+  border: solid 2px #000;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+
+.contGrid > .producto > .imgCont {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: solid 2px #000; }
+
+.contGrid > .producto > .imgCont > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.contGrid > .producto > .contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.contGrid > .producto > .contenido > h2 {
+  font-size: 22pt; }
+
+.contGrid > .producto > .contenido > p {
+  font-size: 18pt; }
+
+.contGrid > .producto > .contenido > button,
+.carrito > .buyAll {
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 5px;
+  background: none;
+  border: solid 2px #0078bd; }
+
+.carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; }
+
+table {
+  border: solid 2px #000; }
+
+table tr td .tt {
+  width: 140px;
+  text-align: center; }
 
 /*Accesories*/
 .shopping-cart {
