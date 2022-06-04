@@ -6,7 +6,7 @@
 
 const contGrid= document.querySelector(".contGrid");
 const tablaCarr= document.querySelector('.tablaCarr');
-const btnC= document.querySelector(".buyAll")
+const btnC= document.querySelector(".btn-success")
 
 
 try {
@@ -87,7 +87,12 @@ try {
                     tdGen.forEach((elem, i) => {
                         console.log(elem);
                         if(elem.innerHTML== datos[addCarr.value].model){
-                            alert("Item added to cart")
+                            Swal.fire({
+                                title: "Item already added to cart",
+                                imageUrl: 'https://cdn-icons-png.flaticon.com/512/70/70021.png',
+                                imageWidth: 100,
+                                imageHeight: 100,
+                              })
                             tr.removeChild(tdOne)
                             tr.removeChild(tdTwo)
                             tablaCarr.removeChild(tr)
@@ -112,12 +117,14 @@ btnC.addEventListener("click", (e) => {
     const trJs= document.querySelectorAll(".trJs")
 
     if (trJs.length == 0){
-        alert("Your Cart is currently empty.")
+        Swal.fire({icon: 'error',
+                   title: 'Oops...',
+                   text: "Your Cart is currently empty."})
     }else{
         trJs.forEach(elem => {
             elem.outerHTML = ""
         })
-        alert("Your purchase was successful!") 
+        Swal.fire("Congratulations!", "Your purchase was successful!", "success") 
     }
 
 

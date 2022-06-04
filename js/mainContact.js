@@ -1,13 +1,17 @@
-const form= document.querySelector("#contactForm")
+const contactForm= document.querySelector("#contact");
 
-if (form){
-form.addEventListener("submit", function(event){
-	event.preventDefault();
+contactForm.addEventListener("submit", function(evento) {
 
-	const valueOfUsername= form.username.value;
-	if (valueOfUsername===''|| valueMail===''){
-		event.preventDefault();
-		alert("neither the email address nor the name can be left empty")
-	}
+	const valorDelUsername = contactForm.username.value;
+	const valorDelSurname= contactForm.surname.value;
+	const valorDelCorreo = contactForm.correo.value;
+
+
+	valorDelUsername ==="" ||  valorDelCorreo ==="" || valorDelSurname ==="" ? evento.preventDefault(Swal.fire({text: "neither the email address nor the name nor the surname can be left empty", icon: "error"})): Swal.fire({icon: "success", timer: 30000, showConfirmButton: false})  
 })
-}
+
+	/*if (valorDelUsername==="" ||  valorDelCorreo ==="" || valorDelSurname==="") {
+		evento.preventDefault();
+		alert("neither the email address nor the name nor the surname can be left empty");
+	}*/	
+
