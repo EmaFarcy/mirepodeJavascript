@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sesion</title>
+    <title>Session</title>
     <!-- JQUERY -->
 
     <script type="text/javascript" src=".././js/jquery-3.3.1.min.js"></script>
@@ -12,12 +12,12 @@
 </head>
 <body>
     <div id="sesion">
-        <h3>Welcome: <span id="usuario"> </span>!
+        <h3>Welcome: <span id="user"> </span>!
     </div>
     <a href='#' id='signOut'>Sign Out</a>
 
     <script>
-        $('#sesion #usuario').text(localStorage.usuario);
+        $('#sesion #user').text(localStorage.user);
         $('#sesion #password').text(localStorage.password);
 
         //Sign Out 

@@ -6,7 +6,8 @@
 
 const contGrid= document.querySelector(".contGrid");
 const tablaCarr= document.querySelector('.tablaCarr');
-const btnC= document.querySelector(".btn-success")
+const btnC= document.querySelector(".btn-success");
+const btnD= document.querySelector(".btn-danger");
 
 
 try {
@@ -126,6 +127,5 @@ btnC.addEventListener("click", (e) => {
         })
         Swal.fire("Congratulations!", "Your purchase was successful!", "success") 
     }
-
 
 })
